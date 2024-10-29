@@ -1,0 +1,89 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/Index/Index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/Index/detail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/Index/Record",
+			"style": {
+				"navigationBarTitleText": "记录"
+			}
+		},
+		{
+			"path" : "pages/User/Index",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的"
+			}
+		},
+		{
+			"path" : "pages/User/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "条款"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "Register/",
+			"pages": [
+				{
+					"path" : "Index",
+					"style" : 
+					{
+						"navigationBarTitleText" : "注册"
+					}
+				}				
+			]
+		}
+	],
+	
+	"tabBar": {
+		"color": "#fff",
+		"selectedColor": "#fff",
+		"borderStyle": "white",
+		"backgroundColor": "#8cc49a",
+		"list": [
+			{
+				"pagePath": "pages/Index/Index",
+				"iconPath": "/static/Images/TabBarImages/Home.png",
+				"selectedIconPath": "/static/Images/TabBarImages/HomeSelected.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/User/Index",
+				"iconPath": "/static/Images/TabBarImages/User.png",
+				"selectedIconPath": "/static/Images/TabBarImages/UserSelected.png",
+				"text": "我的"
+			}
+		]
+	},
+	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "AI——智护",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
