@@ -178,4 +178,4 @@ def translate_result(result_en):
 if __name__ == "__main__":
     tokenizer, model = load_resources()
     # 更改局域网，需更改host
-    app.run(host="192.168.100.71", port=5000, debug=True)
+    app.run(host="-", port=5000, debug=True)
